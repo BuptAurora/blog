@@ -9,7 +9,6 @@ import java.util.List;
 
 /**
  * @Description: 评论持久层接口
- * @Author: lc
  */
 @Mapper
 @Repository

@@ -17,8 +17,6 @@ import java.util.List;
 
 /**
  * @Description: 友链后台管理控制器
- * @Date: Created in 14:01 2020/4/16
- * @Author: Aurora
  * */
 @Controller
 @RequestMapping("/admin")

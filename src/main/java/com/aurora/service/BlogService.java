@@ -5,10 +5,9 @@ import com.aurora.queryvo.*;
 
 import java.util.List;
 
-
-/**
- * Created by limi on 2017/10/20.
- */
+/*
+*   博客业务层
+* */
 public interface BlogService {
 
     ShowBlog getBlogById(Long id);

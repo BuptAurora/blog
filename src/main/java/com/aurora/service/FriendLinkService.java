@@ -6,10 +6,6 @@ import java.util.List;
 
 /**
  * @Description: 友链业务层接口
- * @Date: Created in 13:57 2020/4/16
- * @Author: ONESTAR
- * @QQ群: 530311074
- * @URL: https://onestar.newstar.net.cn/
  */
 public interface FriendLinkService {
 

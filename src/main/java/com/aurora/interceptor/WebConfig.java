@@ -5,11 +5,10 @@ import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 
 /**
- * Created by lc
+ * 指定拦截的内容
  */
 @Configuration
 public class WebConfig extends WebMvcConfigurerAdapter {
-
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(new LoginInterceptor())

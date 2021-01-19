@@ -7,9 +7,9 @@ spring:
 
 logging:
   level:
-    root: warn
-    com.aurora: info
-  file: log/blog-pro.log
+    root: info
+    com.aurora: debug
+  file: log/blog-dev1.log
 
 mybatis:
   type-aliases-package: com.aurora.entity

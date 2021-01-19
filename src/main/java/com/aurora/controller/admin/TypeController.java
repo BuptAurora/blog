@@ -15,10 +15,6 @@ import java.util.List;
 
 /**
  * @Description: 分类管理控制器
- * @Author: ONESTAR
- * @Date: Created in 17:00 2020/3/27
- * @QQ群: 530311074
- * @URL: https://onestar.newstar.net.cn/
  */
 @Controller
 @RequestMapping("/admin")

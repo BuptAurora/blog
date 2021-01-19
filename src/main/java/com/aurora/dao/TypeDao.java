@@ -7,9 +7,7 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 /**
- * @Author: lc
  * @Description: 文章分类持久层接口
- * @Date:
  */
 @Mapper
 @Repository

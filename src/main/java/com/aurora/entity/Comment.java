@@ -1,16 +1,11 @@
 package com.aurora.entity;
 
-import com.aurora.queryvo.DetailedBlog;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
 /**
  * @Description: 评论实体类
- * @Author: ONESTAR
- * @Date: Created in 9:09 2020/3/26
- * @QQ群: 530311074
- * @URL: https://onestar.newstar.net.cn/
  */
 public class Comment {
 
@@ -32,7 +27,6 @@ public class Comment {
     private Comment parentComment;
     private boolean adminComment;
 
-    private DetailedBlog blog;
 
     public Comment() {
     }
@@ -125,14 +119,6 @@ public class Comment {
         this.parentComment = parentComment;
     }
 
-    public DetailedBlog getBlog() {
-        return blog;
-    }
-
-    public void setBlog(DetailedBlog blog) {
-        this.blog = blog;
-    }
-
     public boolean isAdminComment() {
         return adminComment;
     }
@@ -156,7 +142,6 @@ public class Comment {
                 ", replyComments=" + replyComments +
                 ", parentComment=" + parentComment +
                 ", adminComment=" + adminComment +
-                ", blog=" + blog +
                 '}';
     }
 }

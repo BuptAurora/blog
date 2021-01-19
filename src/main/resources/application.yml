@@ -1,11 +1,8 @@
 spring:
   thymeleaf:
     mode: HTML
-
   profiles:
-    active: pro
-  messages:
-    basename: i18n/messages
+    active: dev
   resources:
     add-mappings: true
 

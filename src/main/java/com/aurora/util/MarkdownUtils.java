@@ -15,7 +15,7 @@ import org.commonmark.renderer.html.HtmlRenderer;
 import java.util.*;
 
 /**
- * Created by limi on 2017/10/22.
+ * markdown工具类
  */
 public class MarkdownUtils {
 

@@ -14,10 +14,6 @@ import java.util.List;
 
 /**
  * @Description: 博客列表业务层接口实现类
- * @Author: aurora
- * @Date: Created in 23:36 2020/3/30
- * @QQ群: 530311074
- * @URL: https://oneaurora.newaurora.net.cn/
  */
 @Service
 public class BlogServiceImpl implements BlogService {
