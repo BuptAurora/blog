@@ -18,8 +18,6 @@ public class TypeServiceImpl implements TypeService {
     @Autowired
     private TypeDao typeDao;
 
-
-
     @Transactional
     @Override
     public int saveType(Type type) {

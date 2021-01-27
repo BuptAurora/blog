@@ -27,5 +27,4 @@ public interface TypeDao {
 
     void deleteType(Long id);
 
-
 }

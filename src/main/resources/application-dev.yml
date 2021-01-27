@@ -9,7 +9,7 @@ logging:
   level:
     root: info
     com.aurora: debug
-  file: log/blog-dev1.log
+  file: log/blog-dev.log
 
 mybatis:
   type-aliases-package: com.aurora.entity

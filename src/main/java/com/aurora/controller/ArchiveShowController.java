@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import java.util.List;
 
 /**
- * Created by limi on 2017/10/23.
+ * @Description: 时间轴控制器
  */
 @Controller
 public class ArchiveShowController {

@@ -26,7 +26,7 @@ public interface BlogDao {
 
     void deleteBlog(Long id);
 
-    List<BlogQuery> searchByTitleOrTypeOrRecommend(SearchBlog searchBlog);
+    List<BlogQuery> searchByTitleOrType(SearchBlog searchBlog);
 
     List<FirstPageBlog> getFirstPageBlog();
 

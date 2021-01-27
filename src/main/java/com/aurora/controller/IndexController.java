@@ -76,13 +76,6 @@ public class IndexController {
         return "blog";
     }
 
-//    最新博客列表
-//    @GetMapping("/footer/newblog")
-//    public String newblogs(Model model) {
-//        List<FirstPageBlog> newBlog = blogService.getNewBlog();
-//        model.addAttribute("newblogs", newBlog);
-//        return "index :: newblogList";
-//    }
 
 //    博客信息
     @GetMapping("/footer/blogmessage")
@@ -96,6 +89,6 @@ public class IndexController {
         model.addAttribute("blogViewTotal",blogViewTotal);
         model.addAttribute("blogCommentTotal",blogCommentTotal);
         model.addAttribute("blogMessageTotal",blogMessageTotal);
-        return "index :: blogMessage";
+        return "_fragment :: blogMessage";
     }
 }

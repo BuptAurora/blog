@@ -53,7 +53,7 @@ public class BlogServiceImpl implements BlogService {
 
     @Override
     public List<BlogQuery> getBlogBySearch(SearchBlog searchBlog) {
-        return blogDao.searchByTitleOrTypeOrRecommend(searchBlog);
+        return blogDao.searchByTitleOrType(searchBlog);
     }
 
     @Override

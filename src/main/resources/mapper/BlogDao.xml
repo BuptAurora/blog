@@ -2,13 +2,6 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.aurora.dao.BlogDao">
 
-    <resultMap id="User1" type="com.aurora.entity.User">
-        <id property="id" column="id"/>
-        <result property="nickname" column="nickname"/>
-        <result property="username" column="username"/>
-        <result property="email" column="email"/>
-        <result property="avatar" column="avatar"/>
-    </resultMap>
 
     <resultMap id="blog" type="com.aurora.queryvo.BlogQuery">
         <id property="id" column="id"/>
@@ -83,7 +76,7 @@
     </update>
 
 
-    <select id="searchByTitleOrTypeOrRecommend" parameterType="com.aurora.queryvo.SearchBlog" resultMap="blog">
+    <select id="searchByTitleOrType" parameterType="com.aurora.queryvo.SearchBlog" resultMap="blog">
         <bind name="pattern" value="'%' + title + '%'" />
         select b.id,b.title,b.update_time,b.recommend,b.type_id,t.id,t.name from myblog.t_blog b ,myblog.t_type t
         <where>
@@ -119,7 +112,7 @@
         t.name ,
         u.nickname, u.avatar
         from myblog.t_blog b, myblog.t_type t,myblog.t_user u
-        where b.type_id = t.id and  u.id = b.user_id order by b.update_time desc
+        where b.type_id = t.id and  u.id = b.user_id and b.published = 1 order by b.update_time desc
     </select>
 
     <resultMap id="recommendBlog" type="com.aurora.queryvo.RecommendBlog">
