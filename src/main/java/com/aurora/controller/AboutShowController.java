@@ -4,7 +4,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
 /**
- * 关于我模块的控制器
+ *  @Description: 个人信息控制器
  */
 @Controller
 public class AboutShowController {
